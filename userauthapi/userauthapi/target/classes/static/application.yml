@@ -1,0 +1,21 @@
+server:
+  address: localhost
+  port: 9090
+
+spring:
+  datasource:
+    url:  jdbc:postgresql://localhost:5432/postgres
+    username:  postgres
+    password:  "Kumaris@$16"
+  jpa:
+    hibernate:
+      ddl-auto:  update
+    show-sql:  true
+
+jwt:
+  secret:  your_jwt_secret_key
+  expiration:  3600000  # 1 hour in milliseconds
+
+logging:
+  level:
+    root:  INFO
